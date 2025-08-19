@@ -3,5 +3,8 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/forest-focus/',  // critical for GitHub Pages sub-path deployment
+  base: '/forest-focus/',   // repo name on GitHub
+  build: {
+    outDir: 'dist',
+  },
 })
