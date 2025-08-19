@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* App base styles */
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply antialiased bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-slate-100;
+}
+
+.card-surface {
+  @apply rounded-xl border border-white/10 bg-white/5 backdrop-blur-md shadow-lg;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-lg px-4 py-2 text-sm font-medium transition-colors;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-lg px-4 py-2 text-sm font-medium transition-colors bg-emerald-500 text-white hover:bg-emerald-400 active:bg-emerald-600;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-lg px-4 py-2 text-sm font-medium transition-colors bg-white/10 text-white hover:bg-white/15 active:bg-white/20;
+}
